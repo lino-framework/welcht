@@ -18,3 +18,7 @@
   removed job_search from the main of pcsw.ClientDetail, moved 'is_seeking
   unemployed_since seeking_since' from history_left to history_right of the main
   of pcsw.ClientDetail.
+
+2019-02-28
+==========
+- (:ticket:`2850`) add a filter on pcsw.PersonGroup so the choicelists show only the activated groups.

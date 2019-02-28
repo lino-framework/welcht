@@ -11,13 +11,20 @@ logger = logging.getLogger(__name__)
 
 from django.utils.translation import ugettext_lazy as _
 
-from lino.api import dd
-
 from lino_xl.lib.contacts.roles import ContactsUser
 from lino_xl.lib.cv.roles import CareerUser
 
 from lino_welfare.modlib.pcsw.models import *
 
+
+@dd.chooser()
+def group_choices(cls):
+    return rt.models.pcsw.PersonGroup.objects.filter(
+        active=True)
+
+dd.inject_action(
+    'pcsw.Client',
+    group_choices=group_choices)
 
 class ClientDetail(ClientDetail):
 
