@@ -11,8 +11,8 @@ Quick instructions
 
 Install from source::
 
-    $ git clone https://github.com/lino-framework/welfare.git
-    $ cd welfare
+    $ git clone https://github.com/lino-framework/welcht.git
+    $ cd welcht
     $ virtualenv env
     $ . env/bin/activate
     $ pip install -e .
@@ -25,8 +25,7 @@ Then create a local project::
 
 Add the following content to your :xfile:`settings.py` file::
 
-    from lino_welfare.chatelet.settings import *
-    # from lino_welfare.eupen.settings import *
+    from lino_welcht.settings import *
     SITE = Site(globals())
     DEBUG = True
 
