@@ -1,4 +1,4 @@
-.. _welfare.install:
+.. _welcht.install:
 
 =======================
 Installing Lino Welfare
