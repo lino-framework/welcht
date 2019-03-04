@@ -10,6 +10,6 @@ from lino_welfare.modlib.pcsw import Plugin
 
 class Plugin(Plugin):
 
-    def setup_explorer_menu(config, site, user_type, m):
+    def setup_config_menu(config, site, user_type, m):
         m = m.add_menu(config.app_label, config.verbose_name)
-        m.add_action('pcsw.UnemploymentSituations')
+        m.add_action('pcsw.UnemploymentRights')

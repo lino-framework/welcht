@@ -21,12 +21,12 @@ from lino_welfare.modlib.pcsw.models import *
 
 
 @dd.python_2_unicode_compatible
-class UnemploymentSituation(dd.Model):
+class UnemploymentRight(dd.Model):
 
     class Meta:
         app_label = 'pcsw'
-        verbose_name = _("Unemployment situation")
-        verbose_name_plural = _('Unemployment situations')
+        verbose_name = _("Unemployment right")
+        verbose_name_plural = _('Unemployment rights')
 
     # exclusion = dd.ForeignKey('pcsw.Exclusion')
     name = models.CharField(_("Designation"), max_length=200)
@@ -36,17 +36,16 @@ class UnemploymentSituation(dd.Model):
     def __str__(self):
         return str(self.name)
 
-class UnemploymentSituations(dd.Table):
+class UnemploymentRights(dd.Table):
     auto_fit_column_widths = True
     required_roles = dd.login_required(SocialStaff)
-    help_text = _("Unemployment Situation.")
 
-    model = 'pcsw.UnemploymentSituation'
+    model = 'pcsw.UnemploymentRight'
 
 dd.inject_field(
-    'pcsw.Exclusion', 'unemployment_situation',
+    'pcsw.Exclusion', 'unemployment_right',
     dd.ForeignKey(
-        'pcsw.UnemploymentSituation', blank=True, null=True))
+        'pcsw.UnemploymentRight', blank=True, null=True))
 
 dd.inject_field(
     'pcsw.Exclusion', 'followed_by_forem',
@@ -56,13 +55,13 @@ dd.inject_field(
     dd.CharField(_("Advisor"), max_length=50,blank=True))
 
 @dd.chooser()
-def unemployment_situation_choices(cls):
-    return UnemploymentSituation.objects.filter(
+def unemployment_right_choices(cls):
+    return UnemploymentRight.objects.filter(
         active=True)
 
 dd.inject_action(
     'pcsw.Exclusion',
-    group_choices=unemployment_situation_choices)
+    group_choices=unemployment_right_choices)
 
 @dd.chooser()
 def group_choices(cls):
@@ -73,7 +72,7 @@ dd.inject_action(
     'pcsw.Client',
     group_choices=group_choices)
 
-ExclusionsByClient.column_names = 'unemployment_situation followed_by_forem advisor excluded_from excluded_until remark:10'
+ExclusionsByClient.column_names = 'unemployment_right followed_by_forem advisor excluded_from excluded_until remark:10'
 
 class ClientDetail(ClientDetail):
 
@@ -154,7 +153,7 @@ class ClientDetail(ClientDetail):
     # aids.GrantingsByClient
     # """, label=_("Aids"))
 
-    history = dd.Panel("history_left history_right", label=_("History"))
+    history = dd.Panel("history_left:30 history_right:30", label=_("History"))
 
     history_left = """
     # reception.CreateNoteActionsByClient:20
@@ -162,11 +161,11 @@ class ClientDetail(ClientDetail):
     # lino.ChangesByMaster
     """
     history_right = """
-    uploads.UploadsByClient
+    uploads.UploadsByClient:30x8
     is_seeking unemployed_since seeking_since #work_permit_suspended_until
-    pcsw.ExclusionsByClient
+    pcsw.ExclusionsByClient:30x10
     # excerpts.ExcerptsByProject
-    esf.SummariesByClient
+    esf.SummariesByClient:30x6
     """
 
     calendar = dd.Panel("""

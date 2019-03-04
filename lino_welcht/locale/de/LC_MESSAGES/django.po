@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Lino-DSBE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-28 06:50+0200\n"
+"POT-Creation-Date: 2019-03-04 20:29+0100\n"
 "PO-Revision-Date: 2018-12-10 10:06+0200\n"
 "Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
 "Language: de\n"
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Skills"
 msgstr "Sonstige Fähigkeiten"
 
-#: lino_welcht/lib/cv/models.py:156 lino_welcht/lib/pcsw/models.py:164
+#: lino_welcht/lib/cv/models.py:156 lino_welcht/lib/pcsw/models.py:219
 msgid "Competences"
 msgstr "Kompetenzen"
 
@@ -235,7 +235,7 @@ msgstr "Hindernisse"
 msgid "Obstacle"
 msgstr "Hindernisse"
 
-#: lino_welcht/lib/cv/models.py:241 lino_welcht/lib/pcsw/models.py:170
+#: lino_welcht/lib/cv/models.py:241 lino_welcht/lib/pcsw/models.py:225
 msgid "Obstacles"
 msgstr "Hindernisse"
 
@@ -297,32 +297,71 @@ msgstr "Auswertung"
 msgid "Duties"
 msgstr "Verpflichtungen ASD"
 
-#: lino_welcht/lib/pcsw/models.py:36
-msgid "Person"
+#: lino_welcht/lib/pcsw/choicelists.py:30
+msgid "Followed by FORem"
+msgstr ""
+
+#: lino_welcht/lib/pcsw/choicelists.py:34
+msgid "No"
+msgstr ""
+
+#: lino_welcht/lib/pcsw/choicelists.py:35
+msgid "Yes"
+msgstr ""
+
+#: lino_welcht/lib/pcsw/models.py:28
+#, fuzzy
+msgid "Unemployment right"
+msgstr "Abstammung"
+
+#: lino_welcht/lib/pcsw/models.py:29
+#, fuzzy
+msgid "Unemployment rights"
+msgstr "Abstammung"
+
+#: lino_welcht/lib/pcsw/models.py:32
+#, fuzzy
+msgid "Designation"
+msgstr "Bescheinigung"
+
+#: lino_welcht/lib/pcsw/models.py:33
+msgid "Reference name"
+msgstr ""
+
+#: lino_welcht/lib/pcsw/models.py:34
+msgid "Considered active"
 msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:55
+msgid "Advisor"
+msgstr ""
+
+#: lino_welcht/lib/pcsw/models.py:91
+msgid "Person"
+msgstr ""
+
+#: lino_welcht/lib/pcsw/models.py:110
 #, fuzzy
 msgid "Family situation"
 msgstr "Abstammung"
 
-#: lino_welcht/lib/pcsw/models.py:66
+#: lino_welcht/lib/pcsw/models.py:121
 msgid "Coaches"
 msgstr "Begleiter"
 
-#: lino_welcht/lib/pcsw/models.py:101
+#: lino_welcht/lib/pcsw/models.py:156
 msgid "History"
 msgstr "Historie"
 
-#: lino_welcht/lib/pcsw/models.py:121
+#: lino_welcht/lib/pcsw/models.py:176
 msgid "Calendar"
 msgstr "Kalender"
 
-#: lino_welcht/lib/pcsw/models.py:129
+#: lino_welcht/lib/pcsw/models.py:184
 msgid "Miscellaneous"
 msgstr "Sonstiges"
 
-#: lino_welcht/lib/pcsw/models.py:159
+#: lino_welcht/lib/pcsw/models.py:214
 msgid "Career"
 msgstr "Lebenslauf"
 
@@ -918,6 +957,7 @@ msgstr "Begleiter"
 #~ msgid "Appointment"
 #~ msgstr "Termin"
 
+#~ msgctxt "debts"
 #~ msgid "Summary"
 #~ msgstr "Zusammenfassung"
 
@@ -936,8 +976,9 @@ msgstr "Begleiter"
 #~ msgid "Sent"
 #~ msgstr "Abgeschickt"
 
+#~ msgctxt "courses"
 #~ msgid "Failed"
-#~ msgstr "Fehlgeschlagen"
+#~ msgstr "Nicht bestanden"
 
 #~ msgid "Validated"
 #~ msgstr "Validiert"
@@ -954,9 +995,11 @@ msgstr "Begleiter"
 #~ msgid "Action"
 #~ msgstr "Aktion"
 
+#~ msgctxt "courses"
 #~ msgid "Register"
 #~ msgstr "Eintragen"
 
+#~ msgctxt "courses"
 #~ msgid "Unregister"
 #~ msgstr "Austragen"
 
@@ -1671,10 +1714,6 @@ msgstr "Begleiter"
 #~ msgid "Entered data"
 #~ msgstr "Erfasste Daten"
 
-#~ msgctxt "debts"
-#~ msgid "Summary"
-#~ msgstr "Zusammenfassung"
-
 #~ msgid "Budget Actor"
 #~ msgstr "Budget-Akteur"
 
@@ -2125,6 +2164,7 @@ msgstr "Begleiter"
 #~ msgid "Observed events"
 #~ msgstr "Beobachtungskriterium"
 
+#~ msgctxt "jobs"
 #~ msgid "Active"
 #~ msgstr "Aktiv"
 
@@ -2362,10 +2402,6 @@ msgstr "Begleiter"
 #~ msgid "Candidature states"
 #~ msgstr "Kandidatur-Zustände"
 
-#~ msgctxt "jobs"
-#~ msgid "Active"
-#~ msgstr "Aktiv"
-
 #~ msgid "Probation"
 #~ msgstr "Probezeit"
 
@@ -2376,7 +2412,6 @@ msgstr "Begleiter"
 #~ msgid "Working"
 #~ msgstr "Arbeitet"
 
-#~ msgctxt "jobs"
 #~ msgid "Inactive"
 #~ msgstr "Inaktiv"
 
@@ -3557,19 +3592,8 @@ msgstr "Begleiter"
 #~ msgstr "Gut bestanden"
 
 #~ msgctxt "courses"
-#~ msgid "Failed"
-#~ msgstr "Nicht bestanden"
-
-#~ msgctxt "courses"
 #~ msgid "Aborted"
 #~ msgstr "Abgebrochen"
-
-#~ msgid "Inactive"
-#~ msgstr "Inaktiv"
-
-#~ msgctxt "courses"
-#~ msgid "Register"
-#~ msgstr "Eintragen"
 
 #~ msgid "Register this candidate for this course."
 #~ msgstr "Diesen Kandidaten für diesen Kurs eintragen."
@@ -3579,10 +3603,6 @@ msgstr "Begleiter"
 
 #~ msgid "%(person)s has been registered to %(course)s"
 #~ msgstr "%(person)s wurde eingetragen in %(course)s"
-
-#~ msgctxt "courses"
-#~ msgid "Unregister"
-#~ msgstr "Austragen"
 
 #~ msgid "Unregister this candidate from this course."
 #~ msgstr "Diesen Kandidaten aus diesen Kurs austragen."
@@ -3622,4 +3642,10 @@ msgstr "Begleiter"
 
 #~ msgid "unknown age"
 #~ msgstr "unbek. Alter"
+
+#~ msgid "Unemployment Situation."
+#~ msgstr "Abstammung"
+
+#~ msgid "Unemployment situations"
+#~ msgstr "Abstammung"
 
