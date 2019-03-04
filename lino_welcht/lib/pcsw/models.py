@@ -1,11 +1,13 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2015-2018 Rumma & Ko Ltd
+# Copyright 2015-2019 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 from __future__ import print_function
 from __future__ import unicode_literals
 
 import logging
+
+from .choicelists import FollowedFORem
 
 logger = logging.getLogger(__name__)
 
@@ -17,6 +19,51 @@ from lino_xl.lib.cv.roles import CareerUser
 from lino_welfare.modlib.pcsw.models import *
 
 
+
+@dd.python_2_unicode_compatible
+class UnemploymentSituation(dd.Model):
+
+    class Meta:
+        app_label = 'pcsw'
+        verbose_name = _("Unemployment situation")
+        verbose_name_plural = _('Unemployment situations')
+
+    # exclusion = dd.ForeignKey('pcsw.Exclusion')
+    name = models.CharField(_("Designation"), max_length=200)
+    ref_name = models.CharField(_("Reference name"), max_length=20, blank=True)
+    active = models.BooleanField(_("Considered active"), default=True)
+
+    def __str__(self):
+        return str(self.name)
+
+class UnemploymentSituations(dd.Table):
+    auto_fit_column_widths = True
+    required_roles = dd.login_required(SocialStaff)
+    help_text = _("Unemployment Situation.")
+
+    model = 'pcsw.UnemploymentSituation'
+
+dd.inject_field(
+    'pcsw.Exclusion', 'unemployment_situation',
+    dd.ForeignKey(
+        'pcsw.UnemploymentSituation', blank=True, null=True))
+
+dd.inject_field(
+    'pcsw.Exclusion', 'followed_by_forem',
+    FollowedFORem.field(blank=True))
+dd.inject_field(
+    'pcsw.Exclusion', 'advisor',
+    dd.CharField(_("Advisor"), max_length=50,blank=True))
+
+@dd.chooser()
+def unemployment_situation_choices(cls):
+    return UnemploymentSituation.objects.filter(
+        active=True)
+
+dd.inject_action(
+    'pcsw.Exclusion',
+    group_choices=unemployment_situation_choices)
+
 @dd.chooser()
 def group_choices(cls):
     return rt.models.pcsw.PersonGroup.objects.filter(
@@ -25,6 +72,8 @@ def group_choices(cls):
 dd.inject_action(
     'pcsw.Client',
     group_choices=group_choices)
+
+ExclusionsByClient.column_names = 'unemployment_situation followed_by_forem advisor excluded_from excluded_until remark:10'
 
 class ClientDetail(ClientDetail):
 
