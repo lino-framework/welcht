@@ -1,9 +1,9 @@
-.. doctest docs/specs/welfare/art61.rst
-.. _welfare.specs.art61:
+.. doctest docs/specs/art61.rst
+.. _welcht.specs.art61:
 
-==========================
-Article 61 job supplyments
-==========================
+======================================
+``art61`` : Article 61 job supplyments
+======================================
 
 This document is an overview of the functionality provided by
 :mod:`lino_welfare.modlib.art61`.
@@ -15,12 +15,12 @@ This document is an overview of the functionality provided by
    :depth: 2
    :local:
 
-About this document
-===================
+
+..  include:: /include/tested.rst
 
 >>> from __future__ import print_function
->>> import lino
->>> lino.startup('lino_book.projects.mathieu.settings.doctests')
+>>> from lino import startup
+>>> startup('lino_welcht.demo.settings.doctests')
 >>> from lino.api.doctest import *
 
 

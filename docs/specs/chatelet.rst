@@ -15,7 +15,7 @@ The Lino Welfare "Châtelet" variant
 .. include:: /include/tested.rst
 
 >>> from lino import startup
->>> startup('lino_book.projects.mathieu.settings.doctests')
+>>> startup('lino_welcht.demo.settings.doctests')
 >>> from lino.api.doctest import *
 
 

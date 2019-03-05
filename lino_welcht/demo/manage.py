@@ -3,6 +3,6 @@ if __name__ == "__main__":
     import sys
     import os
     os.environ['DJANGO_SETTINGS_MODULE'] = \
-        'lino_book.projects.mathieu.settings.demo'
+        'lino_welcht.demo.settings.demo'
     from django.core.management import execute_from_command_line
     execute_from_command_line(sys.argv)

@@ -16,7 +16,7 @@ up with :mod:`lino_welcht.lib.xcourses`.
 .. include:: /include/tested.rst
 
 >>> from lino import startup
->>> startup('lino_book.projects.mathieu.settings.doctests')
+>>> startup('lino_welcht.demo.settings.doctests')
 >>> from lino.api.doctest import *
 
 >>> dd.plugins.courses

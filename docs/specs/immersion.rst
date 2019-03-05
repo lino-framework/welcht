@@ -1,20 +1,9 @@
-.. _welfare.specs.immersion:
+.. doctest docs/specs/immersion.rst
+.. _welcht.specs.immersion:
 
-===================
-Immersion trainings
-===================
-
-.. How to test only this document:
-
-    $ python setup.py test -s tests.SpecsTests.test_immersion
-    
-    doctest init:
-
-    >>> from __future__ import print_function,unicode_literals
-    >>> import os
-    >>> os.environ['DJANGO_SETTINGS_MODULE'] = \
-    ...    'lino_book.projects.mathieu.settings.doctests'
-    >>> from lino.api.doctest import *
+====================================
+``immersion`` : Immersion trainings
+====================================
 
 This document describes the :mod:`lino_welfare.modlib.immersion`
 plugin.
@@ -23,6 +12,12 @@ plugin.
 .. contents::
    :depth: 2
 
+
+..  include:: /include/tested.rst
+
+>>> from lino import startup
+>>> startup('lino_welcht.demo.settings.doctests')
+>>> from lino.api.doctest import *
 
 
 Configuration

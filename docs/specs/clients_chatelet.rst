@@ -8,7 +8,7 @@ Clients (Chatelet)
 .. doctest init:
 
     >>> import lino
-    >>> lino.startup('lino_book.projects.mathieu.settings.doctests')
+    >>> lino.startup('lino_welcht.demo.settings.doctests')
     >>> from lino.api.doctest import *
 
 .. contents::

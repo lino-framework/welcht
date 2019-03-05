@@ -1,5 +1,5 @@
 import datetime
-from lino_book.projects.mathieu.settings import *
+from lino_welcht.demo.settings import *
 
 
 class Site(Site):
