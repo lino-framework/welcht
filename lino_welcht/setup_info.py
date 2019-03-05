@@ -31,36 +31,39 @@ SETUP_INFO = dict(
     tests_require=['pytest'],
     include_package_data=True,
     zip_safe=False,    
-    description=u"A Lino Welfare for CPAS de Châtelet",
+    description=u"A Lino Welfare for the PCSW of Châtelet",
     long_description=u"""\
 **Lino Welfare Châtelet** is a 
 `Lino Welfare <http://welfare.lino-framework.org>`__
-application developed and maintained for the PCSW of Châtelet. 
+application developed and maintained for the PCSW of Châtelet in Belgium. 
 
-- For *introductions* and *commercial information* about Lino Welfare
+- For *introductions* and *commercial information* 
   please see `www.saffre-rumma.net
   <http://www.saffre-rumma.net/welfare/>`__.
 
-- The central project homepage is http://welcht.lino-framework.org
+- The `central project homepage <http://welcht.lino-framework.org>`__ 
+  contains change notes, technical specifications and test suites.
 
-- Technical specifiction http://www.lino-framework.org/specs/welfare
+- The `French project homepage <http://fr.welcht.lino-framework.org>`__ 
+  contains release notes and end-user docs.
 
 - Online demo site at http://welfare-demo.lino-framework.org
 
 """,
-    author='Luc Saffre',
-    author_email='luc.saffre@gmail.com',
+    author='Hamza Khchine',
+    author_email='hamza@lino-framework.org',
     url="http://welcht.lino-framework.org",
-    license='BSD',
+    license='BSD License',
     classifiers="""\
 Programming Language :: Python
 Programming Language :: Python :: 2
+Programming Language :: Python :: 3
 Development Status :: 5 - Production/Stable
 Environment :: Web Environment
 Framework :: Django
 Intended Audience :: Developers
 Intended Audience :: System Administrators
-License :: OSI Approved :: GNU Affero General Public License v3
+License :: OSI Approved :: BSD License
 Natural Language :: English
 Natural Language :: French
 Natural Language :: German
@@ -80,7 +83,10 @@ SETUP_INFO.update(packages=[
     'lino_welcht.lib.cv.fixtures',
     'lino_welcht.lib.isip',
     'lino_welcht.lib.pcsw',
-    'lino_welcht.lib.pcsw.fixtures'
+    'lino_welcht.lib.pcsw.fixtures',
+    'lino_welcht.demo',
+    'lino_welcht.demo.settings',
+    'lino_welcht.demo.tests'
 ])
 
 SETUP_INFO.update(message_extractors={

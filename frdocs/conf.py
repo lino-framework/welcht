@@ -9,8 +9,6 @@ templates_path = []
 from lino.sphinxcontrib import configure
 configure(globals(), 'lino_book.projects.mathieu.settings.doctests')
 
-# from atelier.sphinxconf import interproject
-# interproject.configure(globals())
 intersphinx_mapping = {}
 from atelier.sphinxconf import interproject
 interproject.configure(globals(), 'lino_welfare')
@@ -52,7 +50,7 @@ master_doc = 'index'
 # General information about the project.
 #~ project = u"Lino-Welfare"
 project = settings.SITE.title
-copyright = '2012-2018 Luc Saffre'
+copyright = '2012-2019 Rumma & Ko Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -105,7 +103,7 @@ pygments_style = 'sphinx'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "Lino Welfare"
+# html_title = "Lino Welfare"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -138,7 +136,7 @@ html_last_updated_fmt = '%b %d, %Y'
 # Custom sidebar templates, maps document names to template names.
 # http://sphinx.pocoo.org/latest/config.html#confval-html_sidebars
 html_sidebars = {
-    '**': ['languages.html', 'globaltoc.html', 'searchbox.html', 'links.html'],
+    '**': ['globaltoc.html', 'searchbox.html', 'links.html'],
 }
 
 
@@ -171,7 +169,7 @@ html_use_opensearch = ''
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'welfare'
+htmlhelp_basename = 'welcht_fr'
 
 
 my_font_family = "Swiss, Helvetica, 'Liberation Sans'"

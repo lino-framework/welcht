@@ -20,6 +20,7 @@ media
 docs/api/lino_welcht.*
 
 lino_welcht.egg-info
+docs/api/lino_welcht.*
 .build
 htmlcov
 .DS_Store

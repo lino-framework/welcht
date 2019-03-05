@@ -50,7 +50,6 @@ Table des matières
    :hidden:
 
    /contribuer
-   Introduction <about>
    Fiche technique <fiche_technique>
    /todo
 

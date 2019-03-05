@@ -22,18 +22,13 @@ from lino.sphinxcontrib import configure
 #configure(globals(), 'lino_welfare.projects.eupen.settings.demo')
 #configure(globals(), 'lino_welfare.projects.eupen.settings.doctests')
 #configure(globals(), 'lino_welfare.projects.std.settings.doctests')
-configure(globals())
+configure(globals(), "lino_welcht.demo.settings.doctests")
 
-
-# intersphinx_mapping = {}
-# from atelier.sphinxconf import interproject
-# interproject.configure(globals(), 'atelier lino_cosi')
+intersphinx_mapping = {}
+from atelier.sphinxconf import interproject
+interproject.configure(globals(), 'lino_welfare lino_book')
 # intersphinx_mapping['book'] = (
 #     'http://www.lino-framework.org', None)
-
-# intersphinx_mapping = {}
-# from atelier.sphinxconf import interproject
-# interproject.configure(globals(), 'atelier lino_cosi')
 
 # from django.conf import settings
 # settings.SITE.title = "Lino Welfare Reference Manual"
@@ -46,11 +41,18 @@ configure(globals())
 
 # extensions += ['lino.sphinxcontrib.actordoc']
 extensions += ['lino.sphinxcontrib.logo']
-# extensions += ['sphinx.ext.autosummary']
+extensions += ['lino.sphinxcontrib.base']
+
+extensions += ['lino.sphinxcontrib.help_texts_extractor']
+help_texts_builder_targets = {
+    'lino_welcht.': 'lino_welcht',
+}
+
+
 autosummary_generate = True
 
 # autodoc_default_flags = ['members']
-autodoc_default_options = {'members': None}
+# autodoc_default_options = {'members': None}
 # 20180821
 
 primary_domain = 'py'
@@ -213,7 +215,7 @@ htmlhelp_basename = 'welcht'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
 latex_documents = [
-  ('index', 'lino.tex', ur'lino', ur'Luc Saffre', 'manual'),
+  ('index', 'lino.tex', 'lino', 'Luc Saffre', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -241,7 +243,7 @@ latex_documents = [
 #~ srcref_base_uri="http://code.google.com/p/lino/source/browse/#hg" 
 
 extlinks.update(ticket=('http://bugs.saffre-rumma.net/tickets/Ticket/%s', '#'))
-extlinks.update(lino=('http://www.lino-framework.org%s.html', ''))
+# extlinks.update(lino=('http://www.lino-framework.org%s.html', ''))
 
 # extlinks = {
 #   'issue': ('http://code.google.com/p/lino/issues/detail?id=%s', 'Issue '),

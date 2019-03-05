@@ -3,7 +3,24 @@
 # License: BSD (see file COPYING for details)
 
 """
-This package defines functionality specific to :ref:`welcht`.
+The main package for :ref:`welcht`.
+
+.. autosummary::
+   :toctree:
+
+   lib
+   demo
+
+
+.. autosummary::
+   :toctree:
+
+   settings
+   layouts
+   workflows
+   migrate
+
+
 
 """
 
