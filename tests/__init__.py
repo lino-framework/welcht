@@ -11,9 +11,8 @@ How to run these tests::
 """
 from unipath import Path
 
-from lino.utils.pythontest import TestCase
-
 import lino_welcht
+from lino.utils.pythontest import TestCase
 
 
 class BaseTestCase(TestCase):
@@ -24,5 +23,3 @@ class PackagesTests(BaseTestCase):
 
     def test_packages(self):
         self.run_packages_test(lino_welcht.SETUP_INFO['packages'])
-
-        
