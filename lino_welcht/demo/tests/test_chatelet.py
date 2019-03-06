@@ -6,7 +6,7 @@
 
 You can run just these tests by issuing::
 
-  $ cd lino_book/projects/mathieu
+  $ cd lino_welcht/demo
   $ python manage.py test tests.test_chatelet
 
 """
@@ -14,19 +14,17 @@ You can run just these tests by issuing::
 from __future__ import unicode_literals, print_function
 
 from builtins import str
+
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.utils import six
 
-from lino import AFTER18
 from lino.api import rt
-from lino.utils.djangotest import TestCase
-from lino.utils import i2d
-from lino.utils.instantiator import create_row
 from lino.core import constants
-
 from lino.modlib.users.choicelists import UserTypes
-
+from lino.utils import i2d
+from lino.utils.djangotest import TestCase
+from lino.utils.instantiator import create_row
 from lino_welfare.modlib.integ.roles import IntegUser
 
 
