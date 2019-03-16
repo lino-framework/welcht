@@ -12,12 +12,14 @@ PY2 = sys.version_info[0] == 2
 
 
 requires = ['lino-welfare',
-            'pytidylib', 'channels',
+            'pytidylib',
             'django-iban', 'metafone',
             'cairocffi']
 if PY2:
+    requires.append('channels<2')
     requires.append('suds')
 else:
+    requires.append('channels')
     requires.append('suds-py3')
     # requires.append('suds-jurko')
 
