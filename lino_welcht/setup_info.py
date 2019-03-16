@@ -12,7 +12,7 @@ PY2 = sys.version_info[0] == 2
 
 
 requires = ['lino-welfare',
-            'pytidylib', 'channels<2',
+            'pytidylib', 'channels',
             'django-iban', 'metafone',
             'cairocffi']
 if PY2:
