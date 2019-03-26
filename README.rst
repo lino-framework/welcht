@@ -15,7 +15,7 @@ application developed and maintained for the PCSW of Châtelet in Belgium.
 - The `central project homepage <http://welcht.lino-framework.org>`__ 
   contains change notes, technical specifications and test suites.
 
-- The `French project homepage <http://fr.welcht.lino-framework.org>`__ 
+- The `French project homepage <http://fr.welfarelino-framework.org>`__ 
   contains release notes and end-user docs.
 
 - Online demo site at http://welfare-demo.lino-framework.org

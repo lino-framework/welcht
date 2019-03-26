@@ -9,14 +9,18 @@ This section is an exhaustive description of what you can do with
 
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
   
-   clients_chatelet
-   chatelet
-   art61
-   immersion
-   cv2
-   courses
-   esf
+    clients_chatelet
+    chatelet
+    art61
+    immersion
+    cv2
+    courses
+    esf
+    polls
+    misc
+    integ
+    isip_chatelet
 
 

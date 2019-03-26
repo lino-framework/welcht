@@ -26,7 +26,7 @@ configure(globals(), "lino_welcht.demo.settings.doctests")
 
 intersphinx_mapping = {}
 from atelier.sphinxconf import interproject
-interproject.configure(globals(), 'lino_welfare lino_book')
+interproject.configure(globals(), 'lino_weleup lino_welfare lino_book')
 # intersphinx_mapping['book'] = (
 #     'http://www.lino-framework.org', None)
 
