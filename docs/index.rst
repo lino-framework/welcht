@@ -4,7 +4,7 @@
 Lino Welfare Châtelet
 =====================
 
-Welcome to the central project homepage of **Lino Welfare Châtelet**.
+Welcome to the project homepage of **Lino Welfare Châtelet**.
 
 
 .. toctree::
@@ -12,7 +12,5 @@ Welcome to the central project homepage of **Lino Welfare Châtelet**.
 
    about/index
    install/index
-   api/index
-   specs/index
    changes/index
 

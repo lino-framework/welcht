@@ -4,12 +4,12 @@ from __future__ import unicode_literals
 from django.utils.translation import ugettext_lazy as _
 
 help_texts = {
-    'lino_welcht.demo.tests.test_chatelet.TestCase' : _("""Miscellaneous tests on an empty database."""),
-    'lino_welcht.demo.tests.test_chatelet.TestCase.test_cv_obstacle' : _("""Test whether cv.Obstacle.user is correctly set to the requesting
+    'lino_welfare.projects.mathieu.tests.test_chatelet.TestCase' : _("""Miscellaneous tests on an empty database."""),
+    'lino_welfare.projects.mathieu.tests.test_chatelet.TestCase.test_cv_obstacle' : _("""Test whether cv.Obstacle.user is correctly set to the requesting
 user."""),
-    'lino_welcht.demo.tests.test_chatelet.TestCase.test_dupable_hidden' : _("""Since dupable_clients is hidden, we can create duplicate partners
+    'lino_welfare.projects.mathieu.tests.test_chatelet.TestCase.test_dupable_hidden' : _("""Since dupable_clients is hidden, we can create duplicate partners
 without warning."""),
-    'lino_welcht.demo.tests.test_chatelet.TestCase.test_suggest_cal_guests' : _("""Tests a bugfix in suggest_cal_guests."""),
+    'lino_welfare.projects.mathieu.tests.test_chatelet.TestCase.test_suggest_cal_guests' : _("""Tests a bugfix in suggest_cal_guests."""),
     'lino_welcht.lib.cv.ClientIsLearning' : _("""Select only clients who are “learning” during the given date.
 That is, who have an active Study, Training or
 Experience.

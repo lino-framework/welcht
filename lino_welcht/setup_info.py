@@ -85,10 +85,7 @@ SETUP_INFO.update(packages=[
     'lino_welcht.lib.cv.fixtures',
     'lino_welcht.lib.isip',
     'lino_welcht.lib.pcsw',
-    'lino_welcht.lib.pcsw.fixtures',
-    'lino_welcht.demo',
-    'lino_welcht.demo.settings',
-    'lino_welcht.demo.tests'
+    'lino_welcht.lib.pcsw.fixtures'
 ])
 
 SETUP_INFO.update(message_extractors={

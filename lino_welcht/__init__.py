@@ -9,13 +9,15 @@ The main package for :ref:`welcht`.
    :toctree:
 
    lib
-   demo
 
 
 .. autosummary::
    :toctree:
 
    settings
+
+
+.. convert to prosa:
    layouts
    workflows
    migrate

@@ -23,7 +23,6 @@ does not use the deprecated :mod:`lino_xl.lib.properties` plugin.
 .. autosummary::
    :toctree:
 
-   models
    fixtures.std
 
 """
