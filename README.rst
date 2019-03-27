@@ -8,7 +8,7 @@ The ``lino-welcht`` package
 `Lino Welfare <http://welfare.lino-framework.org>`__
 application developed and maintained for the PCSW of Châtelet in Belgium. 
 
-- The central project homepage is published http://welcht.lino-framework.org
+- The central project homepage is http://welcht.lino-framework.org
 
 - For *introductions* and *commercial information* 
   see `www.saffre-rumma.net
