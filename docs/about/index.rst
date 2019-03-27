@@ -4,6 +4,7 @@
 About this application
 ======================
 
+
 .. py2rst::
 
   from lino_welcht import SETUP_INFO

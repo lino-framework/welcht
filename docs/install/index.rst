@@ -1,7 +1,7 @@
 .. _welcht.install:
 
 =======================
-Installing Lino Welfare
+Installation
 =======================
 
 See also http://www.lino-framework.org/dev/quick/install.html
