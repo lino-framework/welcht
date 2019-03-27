@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lino.apps.dsbe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 20:29+0100\n"
-"PO-Revision-Date: 2019-03-04 20:31+0100\n"
+"PO-Revision-Date: 2019-03-27 13:22+0200\n"
 "Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: fr <lino-users@gmail.com>\n"
@@ -105,7 +105,7 @@ msgstr "Traduction"
 
 #: lino_welcht/lib/courses/config/courses/Enrolment/intervention.body.html:24
 msgid "Phone"
-msgstr "Réponse"
+msgstr ""
 
 #: lino_welcht/lib/courses/config/courses/Enrolment/intervention.body.html:25
 msgid "GSM"
