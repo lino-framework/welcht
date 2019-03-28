@@ -7,9 +7,7 @@ ns = setup_from_tasks(
     blogref_url='http://luc.lino-framework.org',
     revision_control_system='git',
     locale_dir='lino_welcht/locale',
-    cleanable_files=['docs/api/lino_welcht.*'],
-    demo_projects=['lino_welfare.projects.mathieu']
-)
+    cleanable_files=['docs/api/lino_welcht.*'])
 
     # apidoc_exclude_pathnames:
     # - lino_welfare/projects
