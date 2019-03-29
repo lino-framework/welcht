@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: lino.apps.dsbe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-04 20:29+0100\n"
-"PO-Revision-Date: 2019-03-27 13:22+0200\n"
+"PO-Revision-Date: 2019-03-29 12:29+0200\n"
 "Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: fr <lino-users@gmail.com>\n"
@@ -201,7 +201,7 @@ msgstr "Compétences sociales"
 
 #: lino_welcht/lib/cv/models.py:191 lino_welcht/lib/cv/models.py:242
 msgid "Type"
-msgstr "Type d'aide sociale"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:212
 msgid "Obstacle type"
@@ -245,7 +245,7 @@ msgstr "Diplôme"
 
 #: lino_welcht/lib/cv/fixtures/std.py:48
 msgid "Alcohol"
-msgstr "Ecole"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:49
 msgid "Health"
