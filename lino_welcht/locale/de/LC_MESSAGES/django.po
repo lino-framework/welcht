@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Lino-DSBE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-04 20:29+0100\n"
+"POT-Creation-Date: 2019-03-29 13:27+0200\n"
 "PO-Revision-Date: 2018-12-10 10:06+0200\n"
 "Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
 "Language: de\n"
@@ -18,6 +18,65 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+
+#: lino_welcht/help_texts.py:7
+msgid "Miscellaneous tests on an empty database."
+msgstr ""
+
+#: lino_welcht/help_texts.py:8
+msgid ""
+"Test whether cv.Obstacle.user is correctly set to the requesting\n"
+"user."
+msgstr ""
+
+#: lino_welcht/help_texts.py:10
+msgid ""
+"Since dupable_clients is hidden, we can create duplicate partners\n"
+"without warning."
+msgstr ""
+
+#: lino_welcht/help_texts.py:12
+msgid "Tests a bugfix in suggest_cal_guests."
+msgstr ""
+
+#: lino_welcht/help_texts.py:13
+msgid ""
+"Select only clients who are “learning” during the given date.\n"
+"That is, who have an active Study, Training or\n"
+"Experience.\n"
+"Only the start_date is used, end_date has no effect when\n"
+"this criteria."
+msgstr ""
+
+#: lino_welcht/help_texts.py:18
+msgid ""
+"A proof is some document which certifies that a given person\n"
+"has a given skill."
+msgstr ""
+
+#: lino_welcht/help_texts.py:20
+msgid ""
+"Abstract base for Skill, SoftSkill and\n"
+"Obstacle."
+msgstr ""
+
+#: lino_welcht/help_texts.py:22
+msgid ""
+"An obstacle is an observed fact or characteristic of a client\n"
+"which might be reason to not get a given job."
+msgstr ""
+
+#: lino_welcht/help_texts.py:24
+msgid "A pointer to ObstacleType."
+msgstr ""
+
+#: lino_welcht/help_texts.py:25
+msgid "The agent who observed this obstacle."
+msgstr ""
+
+#: lino_welcht/help_texts.py:26
+msgid "The date when the agent observed this obstacle."
+msgstr ""
 
 #: lino_welcht/layouts.py:25 lino_welcht/layouts.py:31
 #: lino_welcht/layouts.py:36
@@ -167,84 +226,84 @@ msgstr ""
 msgid "Enrolment"
 msgstr ""
 
-#: lino_welcht/lib/cv/models.py:65
+#: lino_welcht/lib/cv/models.py:48
 #, fuzzy
 msgid "Learning"
 msgstr "Warnungen"
 
-#: lino_welcht/lib/cv/models.py:113
+#: lino_welcht/lib/cv/models.py:96
 msgid "Skill proof"
 msgstr ""
 
-#: lino_welcht/lib/cv/models.py:114
+#: lino_welcht/lib/cv/models.py:97
 msgid "Skill proofs"
 msgstr ""
 
-#: lino_welcht/lib/cv/models.py:134
+#: lino_welcht/lib/cv/models.py:117
 msgid "Remark"
 msgstr "Bemerkung"
 
-#: lino_welcht/lib/cv/models.py:151
+#: lino_welcht/lib/cv/models.py:134
 msgid "Skill"
 msgstr ""
 
-#: lino_welcht/lib/cv/models.py:152
+#: lino_welcht/lib/cv/models.py:135
 #, fuzzy
 msgid "Skills"
 msgstr "Sonstige Fähigkeiten"
 
-#: lino_welcht/lib/cv/models.py:156 lino_welcht/lib/pcsw/models.py:219
+#: lino_welcht/lib/cv/models.py:139 lino_welcht/lib/pcsw/models.py:219
 msgid "Competences"
 msgstr "Kompetenzen"
 
-#: lino_welcht/lib/cv/models.py:177
+#: lino_welcht/lib/cv/models.py:160
 msgid "Soft skill type"
 msgstr ""
 
-#: lino_welcht/lib/cv/models.py:178
+#: lino_welcht/lib/cv/models.py:161
 msgid "Soft skill types"
 msgstr ""
 
-#: lino_welcht/lib/cv/models.py:189
+#: lino_welcht/lib/cv/models.py:172
 #, fuzzy
 msgid "Soft skill"
 msgstr "Erwünschte Eigenschaft"
 
-#: lino_welcht/lib/cv/models.py:190
+#: lino_welcht/lib/cv/models.py:173
 #, fuzzy
 msgid "Soft skills"
 msgstr "Sonstige Fähigkeiten"
 
-#: lino_welcht/lib/cv/models.py:191 lino_welcht/lib/cv/models.py:242
+#: lino_welcht/lib/cv/models.py:174 lino_welcht/lib/cv/models.py:225
 #, fuzzy
 msgid "Type"
 msgstr "Typ "
 
-#: lino_welcht/lib/cv/models.py:212
+#: lino_welcht/lib/cv/models.py:195
 #, fuzzy
 msgid "Obstacle type"
 msgstr "veraltet"
 
-#: lino_welcht/lib/cv/models.py:213
+#: lino_welcht/lib/cv/models.py:196
 #, fuzzy
 msgid "Obstacle types"
 msgstr "Hindernisse"
 
-#: lino_welcht/lib/cv/models.py:240
+#: lino_welcht/lib/cv/models.py:223
 #, fuzzy
 msgid "Obstacle"
 msgstr "Hindernisse"
 
-#: lino_welcht/lib/cv/models.py:241 lino_welcht/lib/pcsw/models.py:225
+#: lino_welcht/lib/cv/models.py:224 lino_welcht/lib/pcsw/models.py:225
 msgid "Obstacles"
 msgstr "Hindernisse"
 
-#: lino_welcht/lib/cv/models.py:246
+#: lino_welcht/lib/cv/models.py:229
 #, fuzzy
 msgid "Detected by"
 msgstr "Angefragt von"
 
-#: lino_welcht/lib/cv/models.py:249
+#: lino_welcht/lib/cv/models.py:232
 msgid "Date"
 msgstr "Datum"
 

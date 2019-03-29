@@ -1,19 +1,18 @@
-# French translations for lino-welfare.
-# Copyright (C) 2016 ORGANIZATION
-# This file is distributed under the same license as the lino-welfare
+# Translations template for lino-welcht.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the lino-welcht
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version:  lino.apps.dsbe\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: lino-welcht 19.3.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-03-29 13:27+0200\n"
-"PO-Revision-Date: 2019-03-29 12:29+0200\n"
-"Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
-"Language: fr\n"
-"Language-Team: fr <lino-users@gmail.com>\n"
-"Plural-Forms: nplurals=2; plural=n>1\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -81,64 +80,64 @@ msgstr ""
 #: lino_welcht/layouts.py:25 lino_welcht/layouts.py:31
 #: lino_welcht/layouts.py:36
 msgid "Contact"
-msgstr "Contact"
+msgstr ""
 
 #: lino_welcht/settings.py:13
 msgid "Lino Welfare"
-msgstr "Lino pour CPAS"
+msgstr ""
 
 #: lino_welcht/settings.py:162
 msgid "Contact details"
-msgstr "Coordonnées"
+msgstr ""
 
 #: lino_welcht/lib/courses/__init__.py:35 lino_welcht/lib/courses/models.py:80
 msgid "Workshops"
-msgstr "Ateliers"
+msgstr ""
 
 #: lino_welcht/lib/courses/__init__.py:37
 msgid "IO"
-msgstr "O.I."
+msgstr ""
 
 #: lino_welcht/lib/courses/desktop.py:64
 msgid "Active workshops"
-msgstr "Ateliers actifs"
+msgstr ""
 
 #: lino_welcht/lib/courses/desktop.py:70
 msgid "Draft workshops"
-msgstr "Ateliers en préparation"
+msgstr ""
 
 #: lino_welcht/lib/courses/desktop.py:75
 msgid "Inactive workshops"
-msgstr "Ateliers inactifs"
+msgstr ""
 
 #: lino_welcht/lib/courses/desktop.py:79
 msgid "Closed workshops"
-msgstr "Ateliers terminés"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:33
 msgid "Integration workshops"
-msgstr "Ateliers d'insertion sociale"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:34
 msgid "Job search workshops"
-msgstr "Ateliers d'Insertion socioprofessionnelle"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:49
 msgid "Never came"
-msgstr "Jamais venu"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:51
 msgid "Started"
-msgstr "Commencé"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:52
 msgid "Finished"
-msgstr "Terminé"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:42
 #: lino_welcht/lib/courses/models.py:79
 msgid "Workshop"
-msgstr "Atelier"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:94
 msgid "Motif de l'orientation"
@@ -150,16 +149,16 @@ msgstr ""
 
 #: lino_welcht/lib/courses/models.py:113
 msgid "Workshop series"
-msgstr "Série d'ateliers"
+msgstr ""
 
 #: lino_welcht/lib/courses/models.py:114
 msgid "Workshop lines"
-msgstr "Séries d'ateliers"
+msgstr ""
 
 #: lino_welcht/lib/courses/config/courses/Enrolment/enrolment.body.html:12
 #: lino_welcht/lib/courses/config/courses/Enrolment/intervention.body.html:12
 msgid "Translation"
-msgstr "Traduction"
+msgstr ""
 
 #: lino_welcht/lib/courses/config/courses/Enrolment/intervention.body.html:24
 msgid "Phone"
@@ -171,27 +170,27 @@ msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:55
 msgid "Introduction to basic kitchen technologies."
-msgstr "Introduction aux techniques de cuisine élémentaires."
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:58
 msgid "Request for enrolment"
-msgstr "Demande d'inscription"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:62
 msgid "Kitchen"
-msgstr "Cuisine"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:73
 msgid "Creativity"
-msgstr "Créativité"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:77
 msgid "Our first baby"
-msgstr "Notre premier bébé"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:81
 msgid "Mathematics"
-msgstr "Mathématiques"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:85
 msgid "French"
@@ -199,63 +198,63 @@ msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:89
 msgid "Get active!"
-msgstr "Activons-nous!"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:95
 msgid "Request for intervention"
-msgstr "Demande d'intervention"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/demo.py:97
 msgid "Psycho-social intervention"
-msgstr "Intervention psycho-sociale"
+msgstr ""
 
 #: lino_welcht/lib/courses/fixtures/std.py:33
 msgid "Enrolment"
-msgstr "Inscription"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:48
 msgid "Learning"
-msgstr "Avertissements"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:96
 msgid "Skill proof"
-msgstr "Preuve de qualification"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:97
 msgid "Skill proofs"
-msgstr "Preuves de qualification"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:117
 msgid "Remark"
-msgstr "Remarque"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:134
 msgid "Skill"
-msgstr "Compétence professionnelle"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:135
 msgid "Skills"
-msgstr "Compétences professionnelles"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:139 lino_welcht/lib/pcsw/models.py:219
 msgid "Competences"
-msgstr "Compétences"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:160
 msgid "Soft skill type"
-msgstr "Type de compétence sociale"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:161
 msgid "Soft skill types"
-msgstr "Types de compétence sociale"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:172
 msgid "Soft skill"
-msgstr "Compétence sociale"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:173
 msgid "Soft skills"
-msgstr "Compétences sociales"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:174 lino_welcht/lib/cv/models.py:225
 msgid "Type"
@@ -263,23 +262,23 @@ msgstr ""
 
 #: lino_welcht/lib/cv/models.py:195
 msgid "Obstacle type"
-msgstr "Type de frein"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:196
 msgid "Obstacle types"
-msgstr "Types de freins"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:223
 msgid "Obstacle"
-msgstr "Freins"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:224 lino_welcht/lib/pcsw/models.py:225
 msgid "Obstacles"
-msgstr "Freins"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:229
 msgid "Detected by"
-msgstr "Détecté par"
+msgstr ""
 
 #: lino_welcht/lib/cv/models.py:232
 msgid "Date"
@@ -287,19 +286,19 @@ msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:43
 msgid "Declarative"
-msgstr "Déclarative"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:44
 msgid "Certificate"
-msgstr "Certificat médical"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:45
 msgid "Attestation"
-msgstr "Attestation"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:46
 msgid "Diploma"
-msgstr "Diplôme"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:48
 msgid "Alcohol"
@@ -307,103 +306,97 @@ msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:49
 msgid "Health"
-msgstr "Santé"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:50
 msgid "Debts"
-msgstr "Dettes"
+msgstr ""
 
 #: lino_welcht/lib/cv/fixtures/std.py:51
 msgid "Family problems"
-msgstr "Problèmes familiers"
+msgstr ""
 
 #: lino_welcht/lib/isip/models.py:21 lino_welcht/lib/isip/models.py:48
 msgid "General"
-msgstr "Général"
+msgstr ""
 
 #: lino_welcht/lib/isip/models.py:29 lino_welcht/lib/isip/models.py:56
 msgid "Evaluations"
-msgstr "Évaluations"
+msgstr ""
 
 #: lino_welcht/lib/isip/models.py:34
 msgid "Duties"
-msgstr "Obligations"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/choicelists.py:30
 msgid "Followed by FORem"
-msgstr "Suivi FORem"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/choicelists.py:34
 msgid "No"
-msgstr "Non"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/choicelists.py:35
 msgid "Yes"
-msgstr "Oui"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:28
 msgid "Unemployment right"
-msgstr "Droit chômage"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:29
 msgid "Unemployment rights"
-msgstr "Droits chômage"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:32
 msgid "Designation"
-msgstr "Désignation"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:33
 msgid "Reference name"
-msgstr "Nom de référence"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:34
 msgid "Considered active"
-msgstr "Considéré actif"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:55
 msgid "Advisor"
-msgstr "Conseiller"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:91
 msgid "Person"
-msgstr "Personne"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:110
 msgid "Family situation"
-msgstr "Situation familiale"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:121
 msgid "Coaches"
-msgstr "Intervenants"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:156
 msgid "History"
-msgstr "Historique"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:176
 msgid "Calendar"
-msgstr "Calendrier"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:184
 msgid "Miscellaneous"
-msgstr "Divers"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/models.py:214
 msgid "Career"
-msgstr "Parcours"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/config/pcsw/Coaching/coaching.body.html:17
 msgid "Client"
-msgstr "Bénéficiaire"
+msgstr ""
 
 #: lino_welcht/lib/pcsw/config/pcsw/Coaching/coaching.body.html:27
 msgid "Coach"
-msgstr "Intervenant"
-
-#~ msgid "Unemployment Situation."
-#~ msgstr "Droit chômage."
-
-#~ msgid "Unemployment situations"
-#~ msgstr "Droits chômage"
+msgstr ""
 
