@@ -11,6 +11,11 @@
 .. contents::
   :local:
 
+2019-04-17
+==========
+
+- (:ticket:`2968`): Remove cal.MyOverdueAppointments from dashboard.
+
 2019-02-27
 ==========
 

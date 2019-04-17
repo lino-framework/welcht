@@ -146,7 +146,7 @@ class Site(Site):
         yield self.models.reception.WaitingVisitors
         # yield self.models.integ.UsersWithClients
         #~ yield self.models.reception.ReceivedVisitors
-        yield self.models.cal.MyOverdueAppointments
+        # yield self.models.cal.MyOverdueAppointments
         
         if user.authenticated:
             yield self.models.notify.MyMessages
