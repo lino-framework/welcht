@@ -57,7 +57,7 @@ application developed and maintained for the PCSW of Châtelet in Belgium.
     author='Hamza Khchine',
     author_email='hamza@lino-framework.org',
     url="http://welcht.lino-framework.org",
-    license='BSD License',
+    license='BSD-2-Clause',
     classifiers="""\
 Programming Language :: Python
 Programming Language :: Python :: 2
