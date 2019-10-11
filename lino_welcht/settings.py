@@ -124,6 +124,7 @@ class Site(Site):
         self.plugins.excerpts.configure(responsible_user='melanie')
         # self.plugins.extjs.configure(enter_submits_form=True)
         self.plugins.integ.configure(only_primary=True)
+        self.plugins.coachings.configure(multiple_primary_coachings=True)
 
     # def get_default_language(self):
     #     return 'fr'
@@ -142,15 +143,15 @@ class Site(Site):
         yield self.models.cal.MyEntriesToday
         yield self.models.cal.MyTasks
         yield self.models.cal.DailyPlanner
-        
+
         yield self.models.reception.WaitingVisitors
         # yield self.models.integ.UsersWithClients
         #~ yield self.models.reception.ReceivedVisitors
         # yield self.models.cal.MyOverdueAppointments
-        
+
         if user.authenticated:
             yield self.models.notify.MyMessages
-            
+
 
     def do_site_startup(self):
         super(Site, self).do_site_startup()
@@ -182,4 +183,3 @@ class Site(Site):
         tb.add_action(self.modules.isip.MyContracts)
         tb.add_action(self.modules.jobs.MyContracts)
         tb.add_action(self.modules.cal.EntriesByDay)
-
