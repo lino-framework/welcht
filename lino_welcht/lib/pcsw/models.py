@@ -20,7 +20,7 @@ from lino_welfare.modlib.pcsw.models import *
 
 
 
-@dd.python_2_unicode_compatible
+
 class UnemploymentRight(dd.Model):
 
     class Meta:
