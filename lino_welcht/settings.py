@@ -63,6 +63,7 @@ class Site(Site):
         yield 'lino_xl.lib.extensible'
         yield 'lino_welfare.modlib.cal'
         yield 'lino_welfare.modlib.reception'
+        yield 'lino_xl.lib.calview'
         yield 'lino_welfare.modlib.badges'
         yield 'lino_xl.lib.boards'
 
