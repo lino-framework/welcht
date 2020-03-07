@@ -143,7 +143,7 @@ class Site(Site):
         yield self.models.cal.MyUnconfirmedAppointments
         yield self.models.cal.MyEntriesToday
         yield self.models.cal.MyTasks
-        yield self.models.cal.DailyPlanner
+        yield self.models.calview.DailyPlanner
 
         yield self.models.reception.WaitingVisitors
         # yield self.models.integ.UsersWithClients
