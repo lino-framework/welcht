@@ -13,6 +13,8 @@ rt.models.uploads.UploadsByClient.display_mode = 'grid'
 
 rt.models.households.SiblingsByPerson.display_mode = 'grid'
 
+# rt.models.cal.TasksByController.display_mode = 'grid'
+
 # humanlinks.LinksByHuman.display_mode = 'grid'
 
 # ContactsByClient.column_names = 'company contact_person remark'
@@ -34,4 +36,3 @@ contacts.CompanyDetail.contact = dd.Panel("""
 #address_box addresses.AddressesByPartner
 remarks:30 #sepa.AccountsByPartner
 """, label=_("Contact"))
-
