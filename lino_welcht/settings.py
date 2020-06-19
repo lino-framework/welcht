@@ -58,6 +58,7 @@ class Site(Site):
         yield 'lino.modlib.changes'
         yield 'lino_xl.lib.addresses'
         yield 'lino_xl.lib.excerpts'
+
         yield 'lino_xl.lib.uploads'
         yield 'lino_xl.lib.outbox'
         yield 'lino_xl.lib.extensible'
@@ -68,6 +69,7 @@ class Site(Site):
         yield 'lino_xl.lib.boards'
 
         yield 'lino_welcht.lib.pcsw'
+        
         # yield 'lino_xl.lib.clients'
         # yield 'lino_xl.lib.coachings'
         yield 'lino_welfare.modlib.welfare'
@@ -108,24 +110,33 @@ class Site(Site):
         yield 'lino.modlib.tinymce'
         yield 'lino_welcht'
 
-    def setup_plugins(self):
-        """
-        Change the default value of certain plugin settings.
+    # def setup_plugins(self):
+    #     """
+    #     Change the default value of certain plugin settings.
+    #
+    #     - :attr:`lino_xl.lib.ledger.Plugin.ref_length` = 5
+    #
+    #     - :attr:`excerpts.responsible_user
+    #       <lino_xl.lib.excerpts.Plugin.responsible_user>` is set to
+    #       ``'melanie'``.
+    #
+    #     """
+    #     super(Site, self).setup_plugins()
+    #     self.plugins.clients.configure(client_model='pcsw.Client')
+    #     self.plugins.addresses.configure(partner_model='contacts.Partner')
+    #     self.plugins.excerpts.configure(responsible_user='melanie')
+    #     # self.plugins.extjs.configure(enter_submits_form=True)
+    #     self.plugins.integ.configure(only_primary=True)
+    #     self.plugins.coachings.configure(multiple_primary_coachings=True)
 
-        - :attr:`lino_xl.lib.ledger.Plugin.ref_length` = 5
-
-        - :attr:`excerpts.responsible_user
-          <lino_xl.lib.excerpts.Plugin.responsible_user>` is set to
-          ``'melanie'``.
-
-        """
-        super(Site, self).setup_plugins()
-        self.plugins.clients.configure(client_model='pcsw.Client')
-        self.plugins.addresses.configure(partner_model='contacts.Partner')
-        self.plugins.excerpts.configure(responsible_user='melanie')
-        # self.plugins.extjs.configure(enter_submits_form=True)
-        self.plugins.integ.configure(only_primary=True)
-        self.plugins.coachings.configure(multiple_primary_coachings=True)
+    def get_plugin_configs(self):
+        for i in super(Site, self).get_plugin_configs():
+            yield i
+        yield ('clients', 'client_model', 'pcsw.Client')
+        yield ('addresses', 'partner_model', 'contacts.Partner')
+        yield ('excerpts', 'responsible_user', 'melanie')
+        yield ('integ', 'only_primary', True)
+        yield ('coachings', 'multiple_primary_coachings', True)
 
     # def get_default_language(self):
     #     return 'fr'
