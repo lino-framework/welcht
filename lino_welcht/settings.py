@@ -69,7 +69,7 @@ class Site(Site):
         yield 'lino_xl.lib.boards'
 
         yield 'lino_welcht.lib.pcsw'
-        
+
         # yield 'lino_xl.lib.clients'
         # yield 'lino_xl.lib.coachings'
         yield 'lino_welfare.modlib.welfare'
@@ -161,7 +161,7 @@ class Site(Site):
         #~ yield self.models.reception.ReceivedVisitors
         # yield self.models.cal.MyOverdueAppointments
 
-        if user.authenticated:
+        if user.is_authenticated:
             yield self.models.notify.MyMessages
 
 
