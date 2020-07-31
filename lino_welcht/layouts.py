@@ -9,7 +9,7 @@ notes.Note.hidden_elements = dd.fields_list(
 
 notes.NotesByProject.display_mode = "grid"
 
-rt.models.uploads.UploadsByClient.display_mode = 'grid'
+rt.models.uploads.UploadsByProject.display_mode = 'grid'
 
 rt.models.households.SiblingsByPerson.display_mode = 'grid'
 

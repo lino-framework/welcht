@@ -161,7 +161,7 @@ class ClientDetail(ClientDetail):
     # lino.ChangesByMaster
     """
     history_right = """
-    uploads.UploadsByClient:30x8
+    uploads.UploadsByProject:30x8
     is_seeking unemployed_since seeking_since #work_permit_suspended_until
     pcsw.ExclusionsByClient:30x10
     # excerpts.ExcerptsByProject
