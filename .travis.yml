@@ -1,9 +1,7 @@
 language: python
 python:
-  - 2.7
   - 3.6
-# env:
-#   - DJANGO=1.11.13
+  - 3.7
 
 before_install:
   - sudo apt-get install -y tidy
@@ -16,7 +14,7 @@ install:
   - pip install -U setuptools
   - pip install coveralls
   - # pip install Django==$DJANGO
-  - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install -r requirements.python3.txt; else pip install -r requirements.txt;  fi
+  - # if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install -r requirements.python3.txt; else pip install -r requirements.txt;  fi
 #   - test -e "requirements.$TRAVIS_BRANCH.txt" && ( pip install -r "requirements.$TRAVIS_BRANCH.txt" ) || ( pip install -r requirements.txt )
   - pip install -e .
   - pip freeze
@@ -32,5 +30,3 @@ script:
 
 after_success:
   - coveralls
-
-
