@@ -24,4 +24,5 @@ install:
 script:
   - inv prep
   - inv test
+  - pip install lino_book
   - inv bd

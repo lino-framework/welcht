@@ -26,7 +26,7 @@ configure(globals(), "lino_welfare.projects.mathieu.settings.doctests")
 
 intersphinx_mapping = {}
 from atelier.sphinxconf import interproject
-interproject.configure(globals(), 'lino_weleup lino_welfare lino_book')
+interproject.configure(globals(), 'lino_welfare lino_book')
 # intersphinx_mapping['book'] = (
 #     'http://www.lino-framework.org', None)
 
@@ -71,8 +71,8 @@ master_doc = 'index'
 
 # General information about the project.
 #~ project = u"Lino-Welfare"
-project = u"Lino Welfare Châtelet"
-copyright = '2012-2019 Rumma & Ko Ltd'
+project = "Lino Welfare Châtelet"
+copyright = '2012-2020 Rumma & Ko Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -203,44 +203,13 @@ html_use_opensearch = ''
 htmlhelp_basename = 'welcht'
 
 
-# Options for LaTeX output
-# ------------------------
-
-# The paper size ('letter' or 'a4').
-#latex_paper_size = 'letter'
-
-# The font size ('10pt', '11pt' or '12pt').
-#latex_font_size = '10pt'
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, document class [howto/manual]).
-latex_documents = [
-  ('index', 'lino.tex', 'lino', 'Luc Saffre', 'manual'),
-]
-
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-#latex_logo = None
-
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-#latex_use_parts = False
-
-# Additional stuff for the LaTeX preamble.
-#latex_preamble = ''
-
-# Documents to append as an appendix to all manuals.
-#latex_appendices = []
-
-# If false, no module index is generated.
-#latex_use_modindex = True
 
 #language="de"
 
 #~ show_source = True
 
 #~ srcref_base_uri="http://code.google.com/lino"
-#~ srcref_base_uri="http://code.google.com/p/lino/source/browse/#hg" 
+#~ srcref_base_uri="http://code.google.com/p/lino/source/browse/#hg"
 
 extlinks.update(ticket=('http://bugs.saffre-rumma.net/tickets/Ticket/%s', '#'))
 # extlinks.update(lino=('http://www.lino-framework.org%s.html', ''))
@@ -274,4 +243,3 @@ extlinks.update(ticket=('http://bugs.saffre-rumma.net/tickets/Ticket/%s', '#'))
 # inheritance_graph_attrs = dict(rankdir="TB")
 # inheritance_graph_attrs.update(size='"12.0, 16.0"')
 # inheritance_graph_attrs.update(fontsize=14, ratio='compress')
-
