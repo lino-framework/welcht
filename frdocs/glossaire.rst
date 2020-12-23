@@ -37,15 +37,15 @@ Glossaire
 
     Il y a plusieurs grandes "catégories" d'ateliers, à savoir:
 
-    - Ateliers d'insertion sociale (`CourseAreas.integ`), p.ex.
+    - Ateliers d'insertion sociale (`ActivityLayouts.integ`), p.ex.
       "Trucs et astuces", "Cuisine", "Créatif", "Parentalité"
 
     - Ateliers d'apprentissage des savoirs de base
-      (`CourseAreas.basic`), p.ex. "Remédiation
+      (`ActivityLayouts.basic`), p.ex. "Remédiation
       français/Mathématiques".
 
     - Modules de détermination d'un projet socioprofessionnel
-      (`CourseAreas.job`), p.ex. le module "Activons-nous".
+      (`ActivityLayouts.job`), p.ex. le module "Activons-nous".
 
 
   Mise au travail 

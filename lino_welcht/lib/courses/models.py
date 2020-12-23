@@ -1,22 +1,19 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2014-2017 Rumma & Ko Ltd
+# Copyright 2014-2020 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 """
 Does some adaptions.
 """
 
-from __future__ import unicode_literals
-from __future__ import print_function
-
 from lino.api import dd, _
 
 from lino_xl.lib.courses.models import *
 
-CourseAreas.clear()
-add = CourseAreas.add_item
+ActivityLayouts.clear()
+add = ActivityLayouts.add_item
 # add('S', _("Integration workshops"), 'integ')  # no longer used
-add('B', _("Integration workshops"), 'default', 'courses.BasicCourses')
+add('B', _("Integration workshops"), 'default')  # , 'courses.BasicCourses')
 add('J', _("Job search workshops"), 'job', 'courses.JobCourses')
 # add('B', _("Social integration"), 'default')
 # add('J', _("Socio-professional integration"), 'job')
@@ -99,5 +96,3 @@ class Line(Line):
         verbose_name = _("Workshop series")
         verbose_name_plural = _('Workshop lines')
         abstract = dd.is_abstract_model(__name__, 'Line')
-
-

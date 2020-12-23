@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2014-2017 Rumma & Ko Ltd
+# Copyright 2014-2020 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 from lino.api import _
@@ -22,46 +22,41 @@ remark
 request_date user
 """
 
-    
-    
+
+# class BasicCourses(Activities):
+#     activity_layout = 'default'
 
 
-class BasicCourses(Activities):
-    _course_area = CourseAreas.default
-
-
-class JobCourses(Activities):
-    _course_area = CourseAreas.job
+class JobCourses(ActivitiesByLayout):
+    activity_layout = 'job'
 
 
 # class IntegEnrolmentsByPupil(EnrolmentsByPupil):
-#     _course_area = CourseAreas.integ
+#     _activity_layout = ActivityLayouts.integ
 
 
 class BasicEnrolmentsByPupil(EnrolmentsByPupil):
-    _course_area = CourseAreas.default
+    activity_layout = 'default'
 
 
 class JobEnrolmentsByPupil(EnrolmentsByPupil):
-    _course_area = CourseAreas.job
+    activity_layout = 'job'
 
 
-class ActiveCourses(ActiveCourses):
+class ActiveActivities(ActiveActivities):
     label = _("Active workshops")
     column_names = 'detail_link enrolments free_places room description *'
     hide_sums = True
 
 
-class DraftCourses(DraftCourses):
+class DraftActivities(DraftActivities):
     label = _("Draft workshops")
     column_names = 'detail_link room description *'
 
 
-class InactiveCourses(InactiveCourses):
+class InactiveActivities(InactiveActivities):
     label = _("Inactive workshops")
 
 
-class ClosedCourses(ClosedCourses):
+class ClosedActivities(ClosedActivities):
     label = _("Closed workshops")
-    
-

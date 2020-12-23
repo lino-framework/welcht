@@ -15,7 +15,7 @@ from lino.utils import Cycler
 
 
 def objects():
-    CourseAreas = rt.models.courses.CourseAreas
+    ActivityLayouts = rt.models.courses.ActivityLayouts
     Line = rt.models.courses.Line
     Course = rt.models.courses.Course
     EventType = rt.models.cal.EventType
@@ -45,7 +45,7 @@ def objects():
     role = rt.models.cal.GuestRole.objects.get(pk=2)
     # **dd.str2kw('name', _("Visitor")))
     kw.update(guest_role=role)
-    obj = line(CourseAreas.default, _("Kitchen"), **kw)
+    obj = line(ActivityLayouts.default, _("Kitchen"), **kw)
     yield obj
     
     kitchen_course = Course(
@@ -56,23 +56,23 @@ def objects():
     yield kitchen_course
     
     kw.update(dd.str2kw('description', ""))
-    obj = line(CourseAreas.default, _("Creativity"), **kw)
+    obj = line(ActivityLayouts.default, _("Creativity"), **kw)
     yield obj
     yield Course(line=obj, start_date=dd.demo_date(-10))
 
-    obj = line(CourseAreas.default, _("Our first baby"), **kw)
+    obj = line(ActivityLayouts.default, _("Our first baby"), **kw)
     yield obj
     yield Course(line=obj, start_date=dd.demo_date(-10))
 
-    obj = line(CourseAreas.default, _("Mathematics"))
+    obj = line(ActivityLayouts.default, _("Mathematics"))
     yield obj
     yield Course(line=obj, start_date=dd.demo_date(-10))
 
-    obj = line(CourseAreas.default, _("French"))
+    obj = line(ActivityLayouts.default, _("French"))
     yield obj
     yield Course(line=obj, start_date=dd.demo_date(-10))
 
-    obj = line(CourseAreas.job, _("Get active!"))
+    obj = line(ActivityLayouts.job, _("Get active!"))
     yield obj
     yield Course(line=obj, start_date=dd.demo_date(-10), max_places=3)
 
@@ -80,7 +80,7 @@ def objects():
     kw.update(dd.str2kw('excerpt_title',
                         _("Request for intervention")))
     kw.update(body_template="intervention.body.html")
-    obj = line(CourseAreas.job, _("Psycho-social intervention"), **kw)
+    obj = line(ActivityLayouts.job, _("Psycho-social intervention"), **kw)
     yield obj
     yield Course(line=obj, start_date=dd.demo_date(-200), max_places=1)
 
