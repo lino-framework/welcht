@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Lino-DSBE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-29 13:27+0200\n"
+"POT-Creation-Date: 2021-02-11 21:06+0200\n"
 "PO-Revision-Date: 2018-12-10 10:06+0200\n"
 "Last-Translator: Luc Saffre <luc.saffre@gmail.com>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.9.0\n"
 
 #: lino_welcht/help_texts.py:7
 msgid "Miscellaneous tests on an empty database."
@@ -78,8 +78,8 @@ msgstr ""
 msgid "The date when the agent observed this obstacle."
 msgstr ""
 
-#: lino_welcht/layouts.py:25 lino_welcht/layouts.py:31
-#: lino_welcht/layouts.py:36
+#: lino_welcht/layouts.py:27 lino_welcht/layouts.py:33
+#: lino_welcht/layouts.py:38
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -87,80 +87,80 @@ msgstr "Kontakt"
 msgid "Lino Welfare"
 msgstr "Lino für ÖSHZ"
 
-#: lino_welcht/settings.py:162
+#: lino_welcht/settings.py:175
 #, fuzzy
 msgid "Contact details"
 msgstr "Vertrag beginnt"
 
-#: lino_welcht/lib/courses/__init__.py:35 lino_welcht/lib/courses/models.py:80
+#: lino_welcht/lib/courses/__init__.py:21 lino_welcht/lib/courses/models.py:63
 msgid "Workshops"
 msgstr ""
 
-#: lino_welcht/lib/courses/__init__.py:37
+#: lino_welcht/lib/courses/__init__.py:23
 msgid "IO"
 msgstr ""
 
-#: lino_welcht/lib/courses/desktop.py:64
+#: lino_welcht/lib/courses/desktop.py:47
 #, fuzzy
 msgid "Active workshops"
 msgstr "Integrationsphase"
 
-#: lino_welcht/lib/courses/desktop.py:70
+#: lino_welcht/lib/courses/desktop.py:53
 #, fuzzy
 msgid "Draft workshops"
 msgstr "Integrationsphase"
 
-#: lino_welcht/lib/courses/desktop.py:75
+#: lino_welcht/lib/courses/desktop.py:58
 #, fuzzy
 msgid "Inactive workshops"
 msgstr "Integrationsphase"
 
-#: lino_welcht/lib/courses/desktop.py:79
+#: lino_welcht/lib/courses/desktop.py:62
 #, fuzzy
 msgid "Closed workshops"
 msgstr "Integrationsphase"
 
-#: lino_welcht/lib/courses/models.py:33
+#: lino_welcht/lib/courses/models.py:16
 #, fuzzy
 msgid "Integration workshops"
 msgstr "Integrationsphase"
 
-#: lino_welcht/lib/courses/models.py:34
+#: lino_welcht/lib/courses/models.py:17
 #, fuzzy
 msgid "Job search workshops"
 msgstr "Uploads Arbeitssuche"
 
-#: lino_welcht/lib/courses/models.py:49
+#: lino_welcht/lib/courses/models.py:32
 msgid "Never came"
 msgstr ""
 
-#: lino_welcht/lib/courses/models.py:51
+#: lino_welcht/lib/courses/models.py:34
 msgid "Started"
 msgstr "Begonnen"
 
-#: lino_welcht/lib/courses/models.py:52
+#: lino_welcht/lib/courses/models.py:35
 msgid "Finished"
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/demo.py:42
-#: lino_welcht/lib/courses/models.py:79
+#: lino_welcht/lib/courses/fixtures/demo.py:28
+#: lino_welcht/lib/courses/models.py:62
 msgid "Workshop"
 msgstr ""
 
-#: lino_welcht/lib/courses/models.py:94
+#: lino_welcht/lib/courses/models.py:77
 msgid "Motif de l'orientation"
 msgstr ""
 
-#: lino_welcht/lib/courses/models.py:97
+#: lino_welcht/lib/courses/models.py:80
 msgid "Difficultés à l'origine de la demande / Problématiques repérées"
 msgstr ""
 
-#: lino_welcht/lib/courses/models.py:113
+#: lino_welcht/lib/courses/models.py:96
 #, fuzzy
 msgid "Workshop series"
 msgstr "Eigenschaften"
 
-#: lino_welcht/lib/courses/models.py:114
+#: lino_welcht/lib/courses/models.py:97
 msgid "Workshop lines"
 msgstr ""
 
@@ -178,51 +178,51 @@ msgstr "Antwort"
 msgid "GSM"
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/demo.py:55
+#: lino_welcht/lib/courses/fixtures/demo.py:41
 msgid "Introduction to basic kitchen technologies."
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/demo.py:58
+#: lino_welcht/lib/courses/fixtures/demo.py:44
 #, fuzzy
 msgid "Request for enrolment"
 msgstr "verpflichtend für Personen"
 
-#: lino_welcht/lib/courses/fixtures/demo.py:62
+#: lino_welcht/lib/courses/fixtures/demo.py:48
 msgid "Kitchen"
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/demo.py:73
+#: lino_welcht/lib/courses/fixtures/demo.py:59
 #, fuzzy
 msgid "Creativity"
 msgstr "Beruf"
 
-#: lino_welcht/lib/courses/fixtures/demo.py:77
+#: lino_welcht/lib/courses/fixtures/demo.py:63
 msgid "Our first baby"
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/demo.py:81
+#: lino_welcht/lib/courses/fixtures/demo.py:67
 msgid "Mathematics"
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/demo.py:85
+#: lino_welcht/lib/courses/fixtures/demo.py:71
 msgid "French"
 msgstr "Französisch"
 
-#: lino_welcht/lib/courses/fixtures/demo.py:89
+#: lino_welcht/lib/courses/fixtures/demo.py:75
 #, fuzzy
 msgid "Get active!"
 msgstr "Inaktiv"
 
-#: lino_welcht/lib/courses/fixtures/demo.py:95
+#: lino_welcht/lib/courses/fixtures/demo.py:81
 #, fuzzy
 msgid "Request for intervention"
 msgstr "Info zur Anfrage"
 
-#: lino_welcht/lib/courses/fixtures/demo.py:97
+#: lino_welcht/lib/courses/fixtures/demo.py:83
 msgid "Psycho-social intervention"
 msgstr ""
 
-#: lino_welcht/lib/courses/fixtures/std.py:33
+#: lino_welcht/lib/courses/fixtures/std.py:19
 msgid "Enrolment"
 msgstr ""
 
@@ -307,37 +307,37 @@ msgstr "Angefragt von"
 msgid "Date"
 msgstr "Datum"
 
-#: lino_welcht/lib/cv/fixtures/std.py:43
+#: lino_welcht/lib/cv/fixtures/std.py:29
 #, fuzzy
 msgid "Declarative"
 msgstr "Deklaration"
 
-#: lino_welcht/lib/cv/fixtures/std.py:44
+#: lino_welcht/lib/cv/fixtures/std.py:30
 #, fuzzy
 msgid "Certificate"
 msgstr "Ärztliche Bescheinigung"
 
-#: lino_welcht/lib/cv/fixtures/std.py:45
+#: lino_welcht/lib/cv/fixtures/std.py:31
 msgid "Attestation"
 msgstr "Bescheinigung"
 
-#: lino_welcht/lib/cv/fixtures/std.py:46
+#: lino_welcht/lib/cv/fixtures/std.py:32
 msgid "Diploma"
 msgstr "Diplom"
 
-#: lino_welcht/lib/cv/fixtures/std.py:48
+#: lino_welcht/lib/cv/fixtures/std.py:34
 msgid "Alcohol"
 msgstr "Alkohol"
 
-#: lino_welcht/lib/cv/fixtures/std.py:49
+#: lino_welcht/lib/cv/fixtures/std.py:35
 msgid "Health"
 msgstr "Gesundheit"
 
-#: lino_welcht/lib/cv/fixtures/std.py:50
+#: lino_welcht/lib/cv/fixtures/std.py:36
 msgid "Debts"
 msgstr "Schulden"
 
-#: lino_welcht/lib/cv/fixtures/std.py:51
+#: lino_welcht/lib/cv/fixtures/std.py:37
 #, fuzzy
 msgid "Family problems"
 msgstr "Familienmitglieder"
@@ -356,15 +356,15 @@ msgstr "Auswertung"
 msgid "Duties"
 msgstr "Verpflichtungen ASD"
 
-#: lino_welcht/lib/pcsw/choicelists.py:30
+#: lino_welcht/lib/pcsw/choicelists.py:16
 msgid "Followed by FORem"
 msgstr ""
 
-#: lino_welcht/lib/pcsw/choicelists.py:34
+#: lino_welcht/lib/pcsw/choicelists.py:20
 msgid "No"
 msgstr ""
 
-#: lino_welcht/lib/pcsw/choicelists.py:35
+#: lino_welcht/lib/pcsw/choicelists.py:21
 msgid "Yes"
 msgstr ""
 
