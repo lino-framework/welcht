@@ -11,7 +11,7 @@ from .choicelists import FollowedFORem
 
 logger = logging.getLogger(__name__)
 
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from lino_xl.lib.contacts.roles import ContactsUser
 from lino_xl.lib.cv.roles import CareerUser
