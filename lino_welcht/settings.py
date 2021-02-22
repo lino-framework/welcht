@@ -38,7 +38,7 @@ class Site(Site):
     # strict_choicelist_values = False
 
     demo_fixtures = """std std2 few_languages all_countries
-    demo cbss demo2 checksummaries""".split()
+    demo cbss demo2 demo3 checksummaries checkdata""".split()
 
     migration_class = 'lino_welcht.migrate.Migrator'
     custom_layouts_module = 'lino_welcht.layouts'
