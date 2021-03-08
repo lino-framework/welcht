@@ -27,7 +27,7 @@ else:
 
 SETUP_INFO = dict(
     name='lino-welcht',
-    version='20.7.0',
+    version='21.3.0',
     install_requires=requires,
     test_suite='tests',
     tests_require=['pytest'],
