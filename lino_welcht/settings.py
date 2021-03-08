@@ -15,7 +15,6 @@ class Site(Site):
     version = lino_welfare.SETUP_INFO['version']
     url = lino_welfare.SETUP_INFO['url']
 
-    hidden_languages = 'nl'
     project_model = 'pcsw.Client'
     # catch_layout_exceptions = False # 20130804
 
@@ -32,7 +31,6 @@ class Site(Site):
     use_silk_icons = False
 
     # verbose_name = "Lino pour CPAS"
-    languages = "fr nl de en"
     # hidden_languages = None
 
     # strict_choicelist_values = False
