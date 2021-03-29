@@ -12,5 +12,3 @@ Welcome to the project homepage of **Lino Welfare Châtelet**.
 
    About <about/index>
    install/index
-   changes/index
-
