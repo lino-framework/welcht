@@ -36,7 +36,7 @@ SETUP_INFO = dict(
     description=u"A Lino Welfare for the PCSW of Châtelet",
     long_description=u"""\
 **Lino Welfare Châtelet** is a
-`Lino Welfare <http://welfare.lino-framework.org>`__
+`Lino Welfare <https://welfare.lino-framework.org>`__
 application developed and maintained for the PCSW of Châtelet in Belgium.
 
 - The central project homepage is http://welcht.lino-framework.org
@@ -46,12 +46,12 @@ application developed and maintained for the PCSW of Châtelet in Belgium.
   <http://www.saffre-rumma.net/welfare/>`__.
 
 - Technical specifications and test suites are in
-  `Lino Welfare <http://welfare.lino-framework.org>`__.
+  `Lino Welfare <https://welfare.lino-framework.org>`__.
 
-- The `French project homepage <http://fr.welfare.lino-framework.org>`__
+- The `French project homepage <https://fr.welfare.lino-framework.org>`__
   contains release notes and end-user docs.
 
-- Online demo site at http://welfare-demo.lino-framework.org
+- Online demo site at https://welfare-demo.lino-framework.org
 
 """,
     author='Hamza Khchine',

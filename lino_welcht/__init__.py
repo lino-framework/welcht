@@ -33,6 +33,6 @@ doc_trees = ['docs']
 #     docs="https://welcht.lino-framework.org",
 #     )
 # intersphinx_urls = dict()
-# intersphinx_urls.update(dedocs="http://de.welfare.lino-framework.org")
-# intersphinx_urls.update(frdocs="http://fr.welfare.lino-framework.org")
+# intersphinx_urls.update(dedocs="https://de.welfare.lino-framework.org")
+# intersphinx_urls.update(frdocs="https://fr.welfare.lino-framework.org")
 srcref_url = 'https://github.com/lino-framework/welcht/blob/master/%s'
