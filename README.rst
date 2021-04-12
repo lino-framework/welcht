@@ -2,6 +2,7 @@
 The ``lino-welcht`` package
 ===========================
 
+Warning: This repository is no longer maintained. Development has moved to https://gitlab.com/lino-framework/welcht
 
 
 **Lino Welfare Châtelet** is a
