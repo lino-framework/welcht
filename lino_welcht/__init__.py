@@ -28,11 +28,12 @@ The main package for :ref:`welcht`.
 
 from .setup_info import SETUP_INFO
 
-doc_trees = ['docs']
+# doc_trees = ['docs']
 # intersphinx_urls = dict(
 #     docs="https://welcht.lino-framework.org",
 #     )
 # intersphinx_urls = dict()
 # intersphinx_urls.update(dedocs="https://de.welfare.lino-framework.org")
 # intersphinx_urls.update(frdocs="https://fr.welfare.lino-framework.org")
-srcref_url = 'https://github.com/lino-framework/welcht/blob/master/%s'
+# srcref_url = 'https://github.com/lino-framework/welcht/blob/master/%s'
+doc_trees = []
